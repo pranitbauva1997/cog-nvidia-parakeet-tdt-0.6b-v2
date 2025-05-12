@@ -3,8 +3,8 @@ build:
   python_packages:
     - "torch"
     - "torchaudio"
-  gpu: false
-  #cuda: "12.1"
+  gpu: true
+  cuda: "12.1"
   system_packages:
     - "libsndfile1"
     - "ffmpeg"
