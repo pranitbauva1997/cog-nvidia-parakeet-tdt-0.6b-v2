@@ -1,0 +1,15 @@
+build:
+  python_version: 3.12
+  python_packages:
+    - "torch"
+    - "torchaudio"
+  gpu: false
+  #cuda: "12.1"
+  system_packages:
+    - "libsndfile1"
+    - "ffmpeg"
+  run:
+    - python -m pip install pip --upgrade
+    - pip install nemo_toolkit['asr']
+
+predict: "predict.py:Predictor"
